@@ -1,0 +1,7 @@
+On a fresh launch, City opens in Sunny Town with a daily task and the first lesson available in each town. There is no onboarding or account setup. Open the first lesson and try an incorrect answer to see the explanation and retry. An incorrect lesson answer also triggers a VoiceOver announcement when VoiceOver is on. Choose the correct answer and tap Continue after each of the three questions to record completion and unlock the next route lesson. The daily task opens its lesson directly, even when that route card is locked.
+
+Open a city quiz from Signs or City and complete its four questions. Finish all three lessons and the quiz in either order, then check Certificates for the dated card.
+
+Tap the person icon in City and solve the addition problem to view progress, family guidance, widget previews and reset controls. Sending the app to the background closes parent access. The reminder starts off. Enabling it requests notification alert and sound permission, the only runtime permission. If allowed, a repeating local reminder is scheduled at the selected time. If denied, the app shows a link to Settings and practice stays available. Confirming a reset clears progress and removes the pending reminder.
+
+WidgetKit reads local progress from shared App Group preferences and opens the daily task when tapped. The project declares a development push entitlement and a remote-notification background mode. The app implements local reminders only. It has no account, analytics, advertising, network requests or cloud sync.

@@ -1,0 +1,658 @@
+[
+  {
+    "id": "meadow",
+    "name": "meadow_name",
+    "season": "meadow_season",
+    "scenes": [
+      {
+        "id": "meadow.0",
+        "title": "meadow.0_title",
+        "art": "signal",
+        "steps": [
+          {
+            "prompt": "p_red",
+            "choices": [
+              "wait",
+              "go_now"
+            ],
+            "right": 0,
+            "why": "w_red",
+            "signal": 0
+          },
+          {
+            "prompt": "p_green",
+            "choices": [
+              "only_signal",
+              "look"
+            ],
+            "right": 1,
+            "why": "w_look",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "walk",
+              "run"
+            ],
+            "right": 0,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "meadow.1",
+        "title": "meadow.1_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_cross",
+            "choices": [
+              "between_cars",
+              "crossing"
+            ],
+            "right": 1,
+            "why": "w_cross",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "run",
+              "walk"
+            ],
+            "right": 1,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "meadow.2",
+        "title": "meadow.2_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_hold",
+            "choices": [
+              "hold",
+              "alone"
+            ],
+            "right": 0,
+            "why": "w_hold",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "assume",
+              "driver_stop"
+            ],
+            "right": 1,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "walk",
+              "run"
+            ],
+            "right": 0,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "meadow.q0",
+        "art": "red",
+        "prompt": "q_sign",
+        "choices": [
+          "red_mean",
+          "go_now"
+        ],
+        "right": 0,
+        "why": "w_red"
+      },
+      {
+        "id": "meadow.q1",
+        "art": "green",
+        "prompt": "q_sign",
+        "choices": [
+          "go_now",
+          "green_mean"
+        ],
+        "right": 1,
+        "why": "w_look"
+      },
+      {
+        "id": "meadow.q2",
+        "art": "crossing",
+        "prompt": "q_sign",
+        "choices": [
+          "cross_mean",
+          "play_road"
+        ],
+        "right": 0,
+        "why": "w_cross"
+      },
+      {
+        "id": "meadow.q3",
+        "art": "stop",
+        "prompt": "q_sign",
+        "choices": [
+          "go_now",
+          "drivers"
+        ],
+        "right": 1,
+        "why": "q_stop_why"
+      }
+    ]
+  },
+  {
+    "id": "amber",
+    "name": "amber_name",
+    "season": "amber_season",
+    "scenes": [
+      {
+        "id": "amber.0",
+        "title": "amber.0_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_kerb",
+            "choices": [
+              "edge",
+              "stop_back"
+            ],
+            "right": 1,
+            "why": "w_kerb",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "run",
+              "walk"
+            ],
+            "right": 1,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "amber.1",
+        "title": "amber.1_title",
+        "art": "signal",
+        "steps": [
+          {
+            "prompt": "p_green",
+            "choices": [
+              "look",
+              "only_signal"
+            ],
+            "right": 0,
+            "why": "w_look",
+            "signal": 1
+          },
+          {
+            "prompt": "p_green",
+            "choices": [
+              "only_signal",
+              "look"
+            ],
+            "right": 1,
+            "why": "w_look",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "walk",
+              "run"
+            ],
+            "right": 0,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "amber.2",
+        "title": "amber.2_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_focus",
+            "choices": [
+              "phone",
+              "phone_away"
+            ],
+            "right": 1,
+            "why": "w_focus",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "run",
+              "walk"
+            ],
+            "right": 1,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "amber.q0",
+        "art": "school",
+        "prompt": "q_sign",
+        "choices": [
+          "play_road",
+          "school_mean"
+        ],
+        "right": 1,
+        "why": "q_school_why"
+      },
+      {
+        "id": "amber.q1",
+        "art": "stop",
+        "prompt": "q_sign",
+        "choices": [
+          "drivers",
+          "go_now"
+        ],
+        "right": 0,
+        "why": "q_stop_why"
+      },
+      {
+        "id": "amber.q2",
+        "art": "green",
+        "prompt": "q_sign",
+        "choices": [
+          "go_now",
+          "green_mean"
+        ],
+        "right": 1,
+        "why": "w_look"
+      },
+      {
+        "id": "amber.q3",
+        "art": "crossing",
+        "prompt": "q_sign",
+        "choices": [
+          "cross_mean",
+          "play_road"
+        ],
+        "right": 0,
+        "why": "w_cross"
+      }
+    ]
+  },
+  {
+    "id": "frost",
+    "name": "frost_name",
+    "season": "frost_season",
+    "scenes": [
+      {
+        "id": "frost.0",
+        "title": "frost.0_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_slip",
+            "choices": [
+              "slow",
+              "slide"
+            ],
+            "right": 0,
+            "why": "w_slip",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "assume",
+              "driver_stop"
+            ],
+            "right": 1,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "walk",
+              "run"
+            ],
+            "right": 0,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "frost.1",
+        "title": "frost.1_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_visible",
+            "choices": [
+              "dark",
+              "bright"
+            ],
+            "right": 1,
+            "why": "w_visible",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "run",
+              "walk"
+            ],
+            "right": 1,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "frost.2",
+        "title": "frost.2_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "assume",
+              "driver_stop"
+            ],
+            "right": 1,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "walk",
+              "run"
+            ],
+            "right": 0,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "frost.q0",
+        "art": "red",
+        "prompt": "q_sign",
+        "choices": [
+          "red_mean",
+          "go_now"
+        ],
+        "right": 0,
+        "why": "w_red"
+      },
+      {
+        "id": "frost.q1",
+        "art": "crossing",
+        "prompt": "q_sign",
+        "choices": [
+          "play_road",
+          "cross_mean"
+        ],
+        "right": 1,
+        "why": "w_cross"
+      },
+      {
+        "id": "frost.q2",
+        "art": "school",
+        "prompt": "q_sign",
+        "choices": [
+          "school_mean",
+          "play_road"
+        ],
+        "right": 0,
+        "why": "q_school_why"
+      },
+      {
+        "id": "frost.q3",
+        "art": "path",
+        "prompt": "q_sign",
+        "choices": [
+          "play_road",
+          "path_mean"
+        ],
+        "right": 1,
+        "why": "q_path_why"
+      }
+    ]
+  },
+  {
+    "id": "clover",
+    "name": "clover_name",
+    "season": "clover_season",
+    "scenes": [
+      {
+        "id": "clover.0",
+        "title": "clover.0_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_cross",
+            "choices": [
+              "between_cars",
+              "crossing"
+            ],
+            "right": 1,
+            "why": "w_cross",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "run",
+              "walk"
+            ],
+            "right": 1,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "clover.1",
+        "title": "clover.1_title",
+        "art": "signal",
+        "steps": [
+          {
+            "prompt": "p_red",
+            "choices": [
+              "wait",
+              "go_now"
+            ],
+            "right": 0,
+            "why": "w_red",
+            "signal": 0
+          },
+          {
+            "prompt": "p_green",
+            "choices": [
+              "only_signal",
+              "look"
+            ],
+            "right": 1,
+            "why": "w_look",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "walk",
+              "run"
+            ],
+            "right": 0,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      },
+      {
+        "id": "clover.2",
+        "title": "clover.2_title",
+        "art": "zebra",
+        "steps": [
+          {
+            "prompt": "p_focus",
+            "choices": [
+              "phone",
+              "phone_away"
+            ],
+            "right": 1,
+            "why": "w_focus",
+            "signal": 1
+          },
+          {
+            "prompt": "p_vehicles",
+            "choices": [
+              "driver_stop",
+              "assume"
+            ],
+            "right": 0,
+            "why": "w_vehicles",
+            "signal": 1
+          },
+          {
+            "prompt": "p_walk",
+            "choices": [
+              "run",
+              "walk"
+            ],
+            "right": 1,
+            "why": "w_walk",
+            "signal": 1
+          }
+        ]
+      }
+    ],
+    "quiz": [
+      {
+        "id": "clover.q0",
+        "art": "path",
+        "prompt": "q_sign",
+        "choices": [
+          "play_road",
+          "path_mean"
+        ],
+        "right": 1,
+        "why": "q_path_why"
+      },
+      {
+        "id": "clover.q1",
+        "art": "stop",
+        "prompt": "q_sign",
+        "choices": [
+          "drivers",
+          "go_now"
+        ],
+        "right": 0,
+        "why": "q_stop_why"
+      },
+      {
+        "id": "clover.q2",
+        "art": "green",
+        "prompt": "q_sign",
+        "choices": [
+          "go_now",
+          "green_mean"
+        ],
+        "right": 1,
+        "why": "w_look"
+      },
+      {
+        "id": "clover.q3",
+        "art": "red",
+        "prompt": "q_sign",
+        "choices": [
+          "red_mean",
+          "go_now"
+        ],
+        "right": 0,
+        "why": "w_red"
+      }
+    ]
+  }
+]
